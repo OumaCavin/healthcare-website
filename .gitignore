@@ -1,0 +1,71 @@
+# Python cache files
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Django specific files
+db.sqlite3  # Ignore the SQLite database file
+*.log       # Ignore log files
+*.pot       # Translation files
+*.pyc
+*.pyo
+
+# Django migrations
+**/migrations/**  # Ignore all migration files, except __init__.py
+!**/migrations/__init__.py
+
+# Environment variables and secrets
+.env           # Environment variables file
+*.env          # Any other env files with sensitive data
+
+# Virtual environment
+venv/
+clinic_env/
+
+# Static and media files
+/static/
+/media/
+
+# Ignore compiled and cache files
+/staticfiles/
+/mediafiles/
+*.mo
+*.pot
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+
+# Node modules (if you're using Node.js with Django)
+node_modules/
+
+# OS generated files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# GitHub Token File or Other Sensitive Tokens
+**/token_file.txt  # Example token file
+
+# Ignore coverage and test output
+.coverage
+htmlcov/
+coverage.xml
+nosetests.xml
+test-results/
+
+# Other sensitive files
+*.pem    # Certificate files
+*.key    # Private keys
+*.crt    # Certificates
+
+# Jupyter notebooks (if using any for data analysis or prototyping)
+.ipynb_checkpoints/
+*.ipynb
+
+# Ignore Pytest Cache
+.pytest_cache/
+
+# Ignore Temporary Files
+*.swp
+*.swo

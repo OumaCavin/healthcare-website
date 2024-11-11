@@ -1,0 +1,12 @@
+Django==4.2           # Replace with the version you're using
+djangorestframework==3.14.0  # Optional, if you're using Django REST framework
+psycopg2==2.9.6       # PostgreSQL database adapter for Python, if using PostgreSQL
+mysqlclient==2.1.1    # MySQL database adapter for Python, if using MySQL
+gunicorn==21.2.0      # WSGI HTTP server for UNIX, useful for production
+python-dotenv==1.0.0  # For managing environment variables in .env files
+Pillow==10.0.1        # Required if you handle image uploads
+
+# Front-end packages (optional, depending on your setup)
+django-crispy-forms==1.14.1  # For better form styling with Bootstrap
+
+

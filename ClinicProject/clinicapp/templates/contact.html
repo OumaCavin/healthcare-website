@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Contact Us - Highway Hospital{% endblock %}
+
+{% block content %}
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Contact Us</h1>
+        <p class="text-center">We'd love to hear from you! If you have any questions or need assistance, feel free to reach out to us through the form below.</p>
+        
+        <form action="submit-contact.html" method="POST">
+            <div class="mb-3">
+                <label for="contactName" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="contactName" name="contactName" required>
+            </div>
+            <div class="mb-3">
+                <label for="contactEmail" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="contactEmail" name="contactEmail" required>
+            </div>
+            <div class="mb-3">
+                <label for="contactMessage" class="form-label">Your Message</label>
+                <textarea class="form-control" id="contactMessage" name="contactMessage" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+{% endblock %}

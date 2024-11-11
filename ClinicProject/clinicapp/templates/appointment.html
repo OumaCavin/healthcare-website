@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Make an Appointment - Klinik{% endblock %}
+
+{% block content %}
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Book Your Appointment</h1>
+        <form action="submit-appointment.html" method="POST">
+            <div class="mb-3">
+                <label for="patientName" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="patientName" name="patientName" required>
+            </div>
+            <div class="mb-3">
+                <label for="patientEmail" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="patientEmail" name="patientEmail" required>
+            </div>
+            <div class="mb-3">
+                <label for="appointmentDate" class="form-label">Appointment Date</label>
+                <input type="date" class="form-control" id="appointmentDate" name="appointmentDate" required>
+            </div>
+            <div class="mb-3">
+                <label for="appointmentTime" class="form-label">Appointment Time</label>
+                <input type="time" class="form-control" id="appointmentTime" name="appointmentTime" required>
+            </div>
+            <div class="mb-3">
+                <label for="appointmentReason" class="form-label">Reason for Visit</label>
+                <textarea class="form-control" id="appointmentReason" name="appointmentReason" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Book Appointment</button>
+        </form>
+    </div>
+{% endblock %}
